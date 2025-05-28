@@ -178,6 +178,7 @@ class MemoryProvider(MemoryProviderBase):
             )
             save_mem_local_short(self.role_id, result)
         logger.bind(tag=TAG).info(f"Save memory successful - Role: {self.role_id}")
+        logger.bind(tag=TAG).info(f"msgStr:{msgStr} - Role: {self.role_id}")
 
         return self.short_momery
 
